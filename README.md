@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ EchoPulse – In-Browser API Workbench & Telemetry Engine
 
-## Getting Started
+> A high-performance, developer-focused API testing workbench and telemetry engine built with **Next.js 16, TypeScript, Zustand, and Tailwind CSS**. Serves as a modern, lightweight, browser-first alternative to Postman and Insomnia.
 
-First, run the development server:
+---
 
+## 🌟 Key Highlights for Recruiters & Hiring Managers
+
+- **Client-Side HTTP Telemetry:** Real-time round-trip latency (`timeMs`), exact wire payload size (`sizeBytes`), HTTP status codes, and complete response headers tree inspection.
+- **Serverless CORS Proxy Pipeline:** Native Next.js App Router edge route (`/api/proxy`) that eliminates browser CORS blocking while benchmarking endpoint latency.
+- **Multi-Language Code Generation Engine:** 1-Click dynamic export into production-ready snippets across:
+  - `cURL` CLI
+  - JavaScript `fetch()`
+  - JavaScript / TypeScript `axios`
+  - Python `requests`
+- **Dynamic Environment Variables:** Templating engine supporting `{{variableName}}` injection across URLs, headers, and request bodies with live resolution.
+- **Client State & History Machine:** Scalable, reactive client-side state powered by **Zustand**, persisting request execution logs and status badges.
+- **Quick Demo Suite:** Built-in 1-click test configurations (GET Users, POST Create, GET Products) for rapid verification.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Framework:** Next.js 16 (App Router, Server Route Handlers)
+- **Language:** TypeScript 5 (Strict type checking, zero `any` leaks)
+- **State Management:** Zustand (Immutable decoupled state)
+- **Styling:** Tailwind CSS (Modern dark-mode glassmorphic theme)
+- **Icons:** Lucide React
+- **Telemetry & Networking:** Web Streams API, Fetch API, Blob Size Computations
+
+---
+
+## 🚀 Getting Started
+
+### 1. Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Production Build
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📸 Resume Bullet Points (Copy & Paste)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```markdown
+**EchoPulse – In-Browser API Workbench & Telemetry Engine** | *Next.js 16, TypeScript, Zustand, Tailwind CSS*
+- Engineered a high-performance browser-based API client (Postman alternative) measuring round-trip latency, payload sizes, and header trees with instant zero-reload feedback.
+- Architected a Next.js App Router proxy pipeline to eliminate CORS restrictions while collecting granular client-side network telemetry.
+- Designed an automated Code Export Engine generating plug-and-play client code snippets across cURL, Fetch API, Axios, and Python requests.
+- Integrated a dynamic environment templating system ({{baseUrl}}) and reactive history stack using Zustand.
+```
